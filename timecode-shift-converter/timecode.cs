@@ -189,22 +189,22 @@ namespace timecode_shift_converter
 
         public static bool operator <(Timecode timecodeA, Timecode timecodeB)
         {
-            return timecodeA.TotalSeconds() < timecodeB.TotalSeconds();
+            return timecodeA.TotalSeconds < timecodeB.TotalSeconds;
         }
 
         public static bool operator <=(Timecode timecodeA, Timecode timecodeB)
         {
-            return timecodeA.TotalSeconds() <= timecodeB.TotalSeconds();
+            return timecodeA.TotalSeconds <= timecodeB.TotalSeconds;
         }
 
         public static bool operator >(Timecode timecodeA, Timecode timecodeB)
         {
-            return timecodeA.TotalSeconds() > timecodeB.TotalSeconds();
+            return timecodeA.TotalSeconds > timecodeB.TotalSeconds;
         }
 
         public static bool operator >=(Timecode timecodeA, Timecode timecodeB)
         {
-            return timecodeA.TotalSeconds() >= timecodeB.TotalSeconds();
+            return timecodeA.TotalSeconds >= timecodeB.TotalSeconds;
         }
 
         private static int FramesPerDay(short framesPerSecond)
