@@ -19,24 +19,24 @@
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Grid.Column="0">
             <Label Content="Timecode startowy pliku" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" />
-            <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="NoWrap" Text="00:00:00:00" VerticalAlignment="Top" FontSize="32" Width="160" MinWidth="160" MinHeight="42"/>
-            <CheckBox Content="fixed" HorizontalAlignment="Right" Margin="0,0,50,10" VerticalAlignment="Center" IsChecked="True" />
+            <TextBlock x:Name="TC_start_file" HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="NoWrap" Text="00:00:00:00" VerticalAlignment="Top" FontSize="32" Width="160" MinWidth="160" MinHeight="42"/>
+            <CheckBox x:Name="TC_start_file_fix" Content="fixed" HorizontalAlignment="Right" Margin="0,0,50,10" VerticalAlignment="Center" IsChecked="True" />
         </StackPanel>
         <StackPanel Grid.Row="0" Grid.Column="1">
             <Label Content="Timecode startowy taśmy" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" />
-            <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="NoWrap" Text="00:00:00:00" VerticalAlignment="Top" FontSize="32" Width="160" MinWidth="160" MinHeight="42"/>
-            <CheckBox Content="fixed" HorizontalAlignment="Right" Margin="0,0,50,10" VerticalAlignment="Center" />
+            <TextBlock  x:Name="TC_start_tape" HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="NoWrap" Text="00:00:00:00" VerticalAlignment="Top" FontSize="32" Width="160" MinWidth="160" MinHeight="42"/>
+            <CheckBox x:Name="TC_start_tape_fix" Content="fixed" HorizontalAlignment="Right" Margin="0,0,50,10" VerticalAlignment="Center" />
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="0">
             <Label Content="Wskazany timecode w pliku" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" />
-            <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="NoWrap" Text="00:00:00:00" VerticalAlignment="Top" FontSize="32" Width="160" MinWidth="160" MinHeight="42"/>
+            <TextBlock x:Name="TV_in_file" HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="NoWrap" Text="00:00:00:00" VerticalAlignment="Top" FontSize="32" Width="160" MinWidth="160" MinHeight="42"/>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="1">
             <Label Content="Wskazany timecode na taśmie" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" />
-            <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="NoWrap" Text="00:00:00:00" VerticalAlignment="Top" FontSize="32" Width="160" MinWidth="160" MinHeight="42"/>
+            <TextBlock x:Name="TC_in_tape" HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="NoWrap" Text="00:00:00:00" VerticalAlignment="Top" FontSize="32" Width="160" MinWidth="160" MinHeight="42"/>
         </StackPanel>
-        <Button Content="PRZELICZ" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Height="50" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="300" FontSize="24" FontWeight="Bold" Background="#FFDF1A1A"/>
-        <TextBox x:Name="Ostatni_wynik" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="5,5,5,5" Grid.Row="3" TextWrapping="WrapWithOverflow" Text="Ostatni wynik" VerticalAlignment="Center" Width="605" Height="145" Background="#FFF1F1F1"/>
+        <Button x:Name="count" Content="PRZELICZ" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" Height="50" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="300" FontSize="24" FontWeight="Bold" Background="#FFDF1A1A"/>
+        <TextBox x:Name="ostatni_wynik" Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="5,5,5,5" Grid.Row="3" TextWrapping="WrapWithOverflow" Text="Ostatni wynik" VerticalAlignment="Center" Width="605" Height="145" Background="#FFF1F1F1"/>
 
     </Grid>
 </Window>

@@ -76,7 +76,14 @@ namespace timecode_shift_converter
             this._contentLoaded = true;
         }
 
-        internal System.Windows.Controls.TextBox Ostatni_wynik;
+        internal System.Windows.Controls.TextBlock TC_start_file;
+        internal System.Windows.Controls.CheckBox TC_start_file_fix;
+        internal System.Windows.Controls.TextBlock TC_start_tape;
+        internal System.Windows.Controls.CheckBox TC_start_tape_fix;
+        internal System.Windows.Controls.TextBlock TV_in_file;
+        internal System.Windows.Controls.TextBlock TC_in_tape;
+        internal System.Windows.Controls.Button count;
+        internal System.Windows.Controls.TextBox ostatni_wynik;
     }
 }
 
