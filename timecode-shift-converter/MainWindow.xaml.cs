@@ -22,7 +22,15 @@ namespace timecode_shift_converter
     {
         public MainWindow()
         {
-            InitializeComponent();
+
+        
+        InitializeComponent();
+       
+        }
+
+        private void count_Click(object sender, RoutedEventArgs e)
+        {
+            showResult();
         }
     }
 }
